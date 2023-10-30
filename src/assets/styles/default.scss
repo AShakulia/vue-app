@@ -1,0 +1,44 @@
+@import './fonts.scss';
+@import './variables.scss';
+
+* {
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  background-color: $background-input;
+  border: 1px solid $border-input;
+  border-radius: 4px;
+  padding: 0.375rem 0.75rem;
+  width: 80%;
+  height: 30px;
+  &:focus {
+    color: #212529;
+    outline: 0;
+    box-shadow: $box-shadow-input;
+  }
+}
+
+.btn-action {
+  background-color: $background-btn-action;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid $border-btn-action;
+  font-size: 1em;
+  max-width: 100%; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    background-color: darken($background-btn-action, 50%);
+    color: white;
+  }
+}
+
+
+
